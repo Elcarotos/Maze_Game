@@ -12,4 +12,5 @@ A simple maze game with an old style/vibe
 - Maps/map_01.txt (map file)
 
 It's playable with a ps4 manette or any controller device if you modified inputs.
-it's scaled with you screen and keep perspective good automatically.
+It's scaled with you screen and keep perspective good automatically.
+You can also easly custom the map with a txt file.
