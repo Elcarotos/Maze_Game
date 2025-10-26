@@ -162,9 +162,7 @@ class Player():
 
 #----------------------------------------------------------------------------------
     def view_collide(self):
-        list_tiles_wall = [tile.pos for tile in list_tiles if tile.state == 1]
-        
-        collide_front = self.view_field["view_front"].pos.collidelistall(list_tiles_wall)
+        collide_front = self.view_field["view_front"].pos.collideobjectsall([tile.pos for tile in list_tiles if tile.state == 1])
         collide_left = self.view_field["view_left"].pos.collidelistall([tile.pos for tile in list_tiles])
         collide_right = self.view_field["view_right"].pos.collidelistall([tile.pos for tile in list_tiles])
 
@@ -182,7 +180,7 @@ class Player():
         self.view_field["view_right"].collision = collide_right
 
 
-        rect = list_tiles_wall[collide_front[0]]
+        rect = self.view_field["view_front"].pos.collideobjects(collide_front)
         
         pos_x = abs(self.pos.x - rect.x)
         pos_y = abs(self.pos.y - rect.y)
@@ -378,4 +376,5 @@ while True:
     direction_affichage()
 
     pygame.display.flip()
+
 
