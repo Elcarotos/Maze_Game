@@ -4,8 +4,8 @@
 A simple 3D maze game with an old style/vibe
 
 ## Librairies
-- python 3.13.1
-- pygame 2.6
+- Python 3.13.1
+- PyGame 2.6
 
 ## Fonctionnement
 - Maze_Game.py (main game file)
