@@ -43,7 +43,7 @@ polygons_right = [[points["B"], points["F"], points["G"], points["C"]],
                  [points["b"], points["f"], points["g"], points["c"]]]
 
 size_x, size_y = 16, 16
-filepath = "Maps/map_03.txt"
+filepath = "Maps/map_01.txt"
 
 font = pygame.font.Font(None, 40)
 
@@ -378,3 +378,4 @@ while True:
     direction_affichage()
 
     pygame.display.flip()
+
