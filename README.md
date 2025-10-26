@@ -1,7 +1,7 @@
-# Maze_3D
+# Maze_Game
 
 ## Description
-A simple maze game with an old style/vibe
+A simple 3D maze game with an old style/vibe
 
 ## Librairies
 - python 3.13.1
